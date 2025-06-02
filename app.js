@@ -8,10 +8,10 @@ var b = 20;
 console.log(chapter);
 // console.log(a + b);
 
-var obj = require("./sum.js");
+var { x, calculateSum } = require("./sum.js");
 
-obj.calculateSum(a, b); // Call the function to calculate and log the sum
-console.log(obj.x);
+calculateSum(a, b); // Call the function to calculate and log the sum
+console.log(x);
 // console.log(global);
 // console.log(this);
 // console.log(globalThis);
