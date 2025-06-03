@@ -1,9 +1,9 @@
-function calculateSum(a, b) {
+export function calculateSum(a, b) {
   const sum = a + b;
 
   console.log(`The sum of ${a} and ${b} is: ${sum}`);
 }
 
-const x = "i can export multiple things";
+export const x = "i can export multiple things";
 
-module.exports = { x, calculateSum }; // Export the function to be used in other files
+// module.exports = { x, calculateSum }; // Export the function to be used in other files
