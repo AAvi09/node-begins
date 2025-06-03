@@ -1,7 +1,7 @@
 // import { x, calculateSum } from "./sum.js"; // Importing named exports from sum.js
 require("./xyz.js"); // one module into another
 const { x, calculateSum, calculateMultiply } = require("./calculate"); // Importing the function from multiply.js
-
+const data = require("./data.json");
 var chapter = "node-begins";
 
 var a = 10;
@@ -20,3 +20,4 @@ console.log(x);
 console.log(this === globalThis); // false
 console.log(globalThis === global); // true
 calculateMultiply(a, b);
+console.log(data);
